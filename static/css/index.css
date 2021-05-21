@@ -1,0 +1,206 @@
+    /*HEAD CONTENT*/
+
+.head{
+    background-image: url("../images/background-header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    position: relative;
+    height: 936px;
+}
+
+.head-text{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.head-text h1 {
+    width: 600px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 44px;
+    margin-bottom: 0;
+}
+.head-text p {
+    width: 600px;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 20px auto 30px;
+}
+
+.head-button {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 200px;
+}
+
+ .head-button button {
+     background: #ade8f4;
+     color: white;
+     border: none;
+     border-radius:5px;
+     padding: 1em 2em;
+     font-size: 1em;
+     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+ }
+ .head-button button:hover {
+     color: white;
+     box-shadow: 0 0.5em 0.5em -0.25em rgb(144, 224, 239);
+     transform: translateY(-0.25em);
+     cursor: pointer;
+ }
+
+   /*BODY CONTENT*/
+
+.content-box {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(195, 175, 244, 0.5);
+}
+
+.content-box h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.body-icon {
+
+    width: 400px;
+    height: 250px;
+    margin: 20px 3.33%;
+    text-align: center;
+    position: static;
+    display: inline-block;
+
+}
+
+.body-icon img{
+    width: 100px;
+}
+
+.body-icon h2 {
+    font-family: 'Roboto ', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height:24px;
+}
+
+.body-icon p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+/*PROJECTS CONTENT*/
+
+.content-box-projects{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgba(195, 175, 244, 0.5);
+    place-items: center;
+}
+
+.project-card {
+    position: relative;
+    width: 345px;
+    background-color: rgba(205, 180, 219, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.project-image{
+    width: 340px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-name{
+    width: 450px;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #f1faee;
+    text-decoration: underline;
+    /*line-height: 44px;*/
+}
+.comment{
+    background: rgb(205, 180, 219);
+     color: white;
+     border: none;
+     border-radius:5px;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     font-size: 1em;
+     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.comment:hover{
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.25em rgba(205, 180, 219, 0.8);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+/*FOOTER CONTENT*/
+
+.content-box-2 {
+    background-image: url("../images/background-footer.jpg");
+    filter: alpha(Opacity=30) ;
+    background-size: cover;
+    position: center;
+    padding-top: 50px;
+    height: 600px;
+    -webkit-background-size: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.services input {
+    width: 350px;
+    height: 56px;
+    margin: 5px;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#footer-button {
+    width: 370px;
+    height: 57px;
+    background: rgba(195, 175, 244, 0.7);
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius:5px;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+#footer-button:hover {
+     color: white;
+     box-shadow: 0 0.5em 0.5em -0.25em rgba(167, 104, 244, 0.8);
+     transform: translateY(-0.25em);
+     cursor: pointer;
+}
+
+.footer {
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    height: 88px;
+    background-color: rgba(167, 148, 244, 0.8);
+    text-align: center;
+    justify-content: center;
+}
+
+.footer h2 {
+    margin: 0;
+    padding: 25px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="static/css/main.css" type="text/css" rel="stylesheet">
+    <link href="static/css/navbar.css" type="text/css" rel="stylesheet">
+    <title>My Projects</title>
+</head>
+<body>
+<section class="head">
+    <header>
+            <div class="navbar">
+                <a href="/">Home</a>
+                <li><a href="{{ login_logout_url }}">{% if user %}{{user}}{% else %}Sign In{% endif %}</a></li>
+            </div>
+    </header>
+</section>
+<section class="project-content">
+    <div>
+        <img class="project-img" src="{{ project.image }}">
+    </div>
+<div class="form-comments">
+    <form action="/project?id={{ project.key.urlsafe() }}" method="POST" id="formProject">
+        <input type="text" placeholder="Enter your comment" name="userComment" class="userComment"/><br />
+        <button id="footer-button" class="submit" type="submit">Submit</button>
+    </form>
+    {% for item in list_data %}
+    <p class="comments">{{ item.text }}</p>
+    {% else %}
+        <p class="comments">No data.</p>
+    {% endfor %}
+</div>
+
+</section>
+<div class="footer">
+    <h2>© All rights reserved</h2>
+</div>
+<script src="static/js/jquery-3.5.1.min.js"></script>
+</body>
+</html>
